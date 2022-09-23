@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Site Title  -->
+    <title>FACELOGIN</title>
+    <!-- Bundle and Base CSS -->
+    <link rel="stylesheet" href="../static/css/style.css?ver=200">
+    <link rel="stylesheet" href="../static/css/theme.css?ver=200">
+    <!-- Extra CSS -->
+    <link rel="stylesheet" href="../static/css/vendor.bundle.bs4.css?ver=200">
+</head>
+
+<body class="nk-body body-wider bg-light-alt">
+    <div class="nk-wrap">
+        <main class="nk-pages nk-pages-centered bg-theme">
+            <div class="ath-container">
+                <div class="ath-header text-center">
+                    <a href="./" class="ath-logo"><img src="../static/image/face-recognition-scaled.jpg" style="width: 150px;height:150px; "></a>
+                </div>
+                <div class="ath-body">
+                    <h5 class="ath-heading title">FACE LOGIN</small></h5>
+                    <div class="form-section">
+                        {% if incorrect == True %}
+                        <p style="color:red"> Username or Password is incorrect </p>
+                        {% elif invalid_user == True %}
+                        <p style="color:red"> You are not {{username}} </p>
+                        {% endif %}
+                        <form method="POST">
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input type="text" class="input-bordered" placeholder="Ten Dang Nhap"name="username"id="username">
+                                </div>
+                            </div>
+                            <div class="field-item">
+                                <div class="field-wrap">
+                                    <input type="password" class="input-bordered" placeholder="Mat Khau" name="password"id="password">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pdb-r">
+                                <div class="field-item pb-0">
+                                    <input class="input-checkbox" id="remember-me-2" type="checkbox">
+                                    <label for="remember-me-2">Remember Me</label>
+                                </div>
+                                
+                            </div>
+                            <button  type="submit" class="btn btn-primary btn-block btn-md" style="margin-left: 108px;" >Sign In</button>
+                            
+                        </form>
+                    </div>
+                 
+            
+                </div>
+               
+            </div>
+        </main>
+    </div>
+    <!-- Preloader -->
+    <div class="preloader"><span class="spinner spinner-round"></span></div>
+    <!-- JavaScript -->
+    <script src="../static/js/js/charts.js?ver=200"></script>
+    <script src="../static/js/js/jquery.bundle.js?ver=200"></script>
+    <script src="../static/js/js/scripts.js?ver=200"></script>
+    <script src="../static/js/js/toastr.examples.js?ver=200"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+    <div style="margin-top: 50px" align="center">
+        <h2>Welcome {{ name }}! Your website goes here!</h2> <br>
+
+<!--        original image size 220x275-->
+
+        <img width=950px height=600px src="{{url_for('static', filename='photos/hello.jpg')}}">
+
+	</div>
+</body>
+</html>
